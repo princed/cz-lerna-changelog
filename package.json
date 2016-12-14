@@ -1,5 +1,5 @@
 {
-  "name": "cz-lerna-changelog",
+  "name": "@princed/cz-lerna-changelog",
   "description": "Commitizen adapter following the conventional-changelog format.",
   "main": "lib/index.js",
   "scripts": {
@@ -16,17 +16,16 @@
   "author": "Joshua Nelson <jonelson@atlassian.com>, Joscha Feth <jfeth@atlassian.com>",
   "license": "MIT",
   "dependencies": {
-    "cz-conventional-changelog": "jpnelson/cz-conventional-changelog#a9a5468d",
+    "cz-conventional-changelog": "1.1.6",
     "shelljs": "0.7.0"
   },
   "peerDependencies": {
-    "lerna": "*"
+    "@ahfarmer/lerna": "*"
   },
   "devDependencies": {
     "babel-cli": "6.8.0",
     "babel-preset-es2015": "6.6.0",
     "commitizen": "1.0.5",
-    "lerna": "jpnelson/lerna#8c0e5a44",
     "semantic-release": "^4.3.5"
   },
   "directories": {

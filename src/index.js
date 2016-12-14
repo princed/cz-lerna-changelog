@@ -1,15 +1,14 @@
 import conventionalPrompt from 'cz-conventional-changelog/prompt';
 import conventionalFormat from 'cz-conventional-changelog/format';
 
-import PackageUtilities from 'lerna/lib/PackageUtilities';
-import Repository from 'lerna/lib/Repository';
+import PackageUtilities from '@ahfarmer/lerna/lib/PackageUtilities';
+import Repository from '@ahfarmer/lerna/lib/Repository';
 
 import shell from 'shelljs';
 import path from 'path';
 
 function getAllPackages () {
-  const packagesLocation = new Repository().packagesLocation;
-  return PackageUtilities.getPackages(packagesLocation);
+  return PackageUtilities.getPackages(new Repository());
 }
 
 function getChangedPackages () {
